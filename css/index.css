@@ -884,21 +884,22 @@
 .banner-btn:hover{
 	background-color: rgba(0, 0, 0, 0.7)
 }
-.lbtn{
+.banner .lbtn{
 	left: 234px;
 }
 .rbtn{
 	right: 0;
 }
 .banner-pages{
-	width: 140px;
+	width: 140px!important;
 	height: 10px;
 	position: absolute;
 	right: 30px;
-	bottom: 10px;
+	bottom: 10px!important;
 	z-index: 999;
+	left: auto!important;
 }
-.banner-pages li{
+.banner .banner-pages .swiper-pagination-bullet{
 	width: 6px;
 	height: 6px;
 	background-color: #ccc;
@@ -908,6 +909,9 @@
 	border: 2px solid #666;
 	cursor: pointer;
 }
+/* .swiper-pagination-bullet-active{
+	background-color: yellowgreen!important;
+} */
 .nav-search{
 	width: 296px;
 	height: 50px;

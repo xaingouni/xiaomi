@@ -142,8 +142,8 @@
 				<span> > </span>
 			</div>
 		</div>
-		<div class="banner-btn lbtn"> < </div>
-		<div class="banner-btn rbtn"> > </div>
+		<div class="banner-btn lbtn swiper-button-prev swiper-button-white"></div>
+		<div class="banner-btn rbtn swiper-button-next swiper-button-white"></div>
 
 		<ul class="banner-pages swiper-pagination">
 	<!-- 	 type="square" -->
@@ -1196,9 +1196,13 @@
 </html>
 <script> 
 var mySwiper = new Swiper('.swiper-container', {
-	autoplay: 500,//可选选项，自动滑动
+	autoplay: 5000,//可选选项，自动滑动
 	effect : 'fade',
-	pagination : '.swiper-pagination'
+	pagination : '.swiper-pagination',
+	prevButton:'.swiper-button-prev',
+	nextButton:'.swiper-button-next',
+	loop : true,
+
 })
 
 let floor = document.querySelectorAll(".floor");
